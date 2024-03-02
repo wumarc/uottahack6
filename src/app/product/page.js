@@ -1,5 +1,4 @@
 // Create a product detail page
-
 import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -7,8 +6,11 @@ import Container from 'react-bootstrap/Container';
 import ProductInfo from '../components/productInfo';
 import Image from 'next/image';
 import logo from '../../../public/images/logo.png';
+import Image from 'next/image';
+import logo from '../../../public/images/logo.png';
 
 export default function Product() {
+    
     const product = {
         id: 1,
         name: "Amazing Widget",
@@ -22,7 +24,8 @@ export default function Product() {
     };
 
     return (
-        <Container>
+        <Container className='justify-content-md-center'>
+
         {/* Header */}
         <Row className='justify-content-md-center'>
         <Col xl='12' md='auto' className='justify-content-md-center'>
@@ -34,7 +37,7 @@ export default function Product() {
         {/* Content */}
         <Row>
             <Col>
-            <h1>Product Detail</h1>
+                <h1>Product Detail</h1>
             </Col>
         </Row>
 

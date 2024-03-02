@@ -7,11 +7,13 @@ import Container from 'react-bootstrap/Container';
 import logo from '../../public/images/logo.png';
 import { Item } from './components/item';
 import Stack from 'react-bootstrap/Stack';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Home() {
   
   return (
     <Container className='justify-content-md-center'>
+      
       {/* Header */}
       <Row className='justify-content-md-center'>
         <Col xl='12' md='auto' className='justify-content-md-center'>
@@ -23,23 +25,20 @@ export default function Home() {
       {/* Content */}
       <Row>
         <h2>Jackets</h2>
-        <Col lg={3}>
-          <Item/>
-        </Col>
 
-        <Col lg={3}>
-          <Item/>
-        </Col>
+        <Row>
+          <Col md="auto">
+            <Item/>
+          </Col>
 
-          <Item/>
-          <Item/>
-          <Item/>
-          <Item/>
+          <Col>
+            <Item/>
+          </Col>
+        </Row>
 
         <Col>
           <h2>Hoodies</h2>
         </Col>
-
 
       </Row>
 
