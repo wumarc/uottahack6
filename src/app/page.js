@@ -13,6 +13,7 @@ export default function Home() {
   
   return (
     <Container className='justify-content-md-center'>
+      
       {/* Header */}
       <Row className='justify-content-md-center'>
         <Col xl='12' md='auto' className='justify-content-md-center'>
