@@ -11,7 +11,18 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Home() {
 
-  const items = [1, 1, 1, 1, 1, 1]
+  const items = [{ id: 1, name: 'Worn Fleece Jacket', category : 'Sweater', condition: 'Excellent', price: '$50', originalPrice: '$80', image: 'fleece-jacket.jpg' },
+  { id: 2, name: 'Vintage Hiking Boots', condition: 'Like New', category : 'Sweater', price: '$80', originalPrice: '$120', image: 'hiking-boots.jpg' },
+  { id: 3, name: 'Recycled Backpack', condition: 'Good', category : 'Sweater',price: '$40', originalPrice: '$60', image: 'recycled-backpack.jpg' },
+  { id: 4, name: 'Worn Fleece Jacket', category : 'Jacket', condition: 'Excellent', price: '$50', originalPrice: '$80', image: 'fleece-jacket.jpg' },
+  { id: 5, name: 'Vintage Hiking Boots', condition: 'Like New', category : 'Jackets', price: '$80', originalPrice: '$120', image: 'hiking-boots.jpg' },
+  { id: 6, name: 'Recycled Backpack', condition: 'Good', category : 'Jackets',price: '$40', originalPrice: '$60', image: 'recycled-backpack.jpg' },
+  { id: 7, name: 'Worn Fleece Jacket', category : 'Hoodie', condition: 'Excellent', price: '$50', originalPrice: '$80', image: 'fleece-jacket.jpg' },
+  { id: 8, name: 'Vintage Hiking Boots', condition: 'Like New', category : 'Hoodie', price: '$80', originalPrice: '$120', image: 'hiking-boots.jpg' },
+  { id: 9, name: 'Recycled Backpack', condition: 'Good', category : 'Hoodie',price: '$40', originalPrice: '$60', image: 'recycled-backpack.jpg' },
+  
+  
+  ]
   const categoryName = ["Jackets", "Hoodie", "Sweater"]
 
   return (
@@ -34,7 +45,21 @@ export default function Home() {
       </Row>
 
       {/* Content */}
-      <Row>
+              {categoryName.map((category, categoryIndex) => (
+          <Row key={categoryIndex}>
+            <h2>{category}</h2>
+            <Row>
+              {items
+                .filter(item => item.category === category)
+                .map((item, itemIndex) => (
+                  <Col key={itemIndex} md="auto" className='pb-3'>
+                    <Item index={itemIndex} item={item} />
+                  </Col>
+                ))}
+            </Row>
+          </Row>
+))}
+      {/* <Row>
         <h2>{categoryName[0]}</h2>
         <Row>
           {items.map((item, index) => (
@@ -50,7 +75,7 @@ export default function Home() {
         <Row>
           {items.map((item, index) => (
             <Col md="auto" className='pb-3'>
-              <Item index={index}/>
+              <Item index={index} />
             </Col>
           ))}
         </Row>
@@ -65,7 +90,7 @@ export default function Home() {
             </Col>
           ))}
         </Row>
-      </Row>
+      </Row> */}
 
 
 
