@@ -29,8 +29,7 @@ export default function Home() {
       <Row>
         <Col>
           <p style={{fontSize: '20px', justifyContent: 'center', alignItems: 'center'}}>
-            Welcome to Patagonia's Sustainability Hub – where style meets conscience. Shop eco-friendly, high-quality gear that's as cool as it is kind to the planet. Make a statement with sustainable fashion.
-          </p>
+          Revive the Adventure, Rewear the Passion. Explore Patagonia's Sustainability Hub – Elevate your style sustainably, one worn treasure at a time. Join the movement, shop conscious, and let your fashion make a positive impact on our planet.          </p>
         </Col>
       </Row>
 
