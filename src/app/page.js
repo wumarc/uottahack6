@@ -20,13 +20,6 @@ export default function Home() {
         </Col>
       </Row>
 
-      {/* Footer */}
-      <Row>
-        <Col>
-          <h1>Footer</h1>
-        </Col>
-      </Row>
-
     </Container>
   );
 }
