@@ -7,6 +7,7 @@ import Container from 'react-bootstrap/Container';
 import logo from '../../public/images/logo.png';
 import { Item } from './components/item';
 import Stack from 'react-bootstrap/Stack';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Home() {
   
@@ -23,23 +24,20 @@ export default function Home() {
       {/* Content */}
       <Row>
         <h2>Jackets</h2>
-        <Col lg={3}>
-          <Item/>
-        </Col>
 
-        <Col lg={3}>
-          <Item/>
-        </Col>
+        <Row>
+          <Col md="auto">
+            <Item/>
+          </Col>
 
-          <Item/>
-          <Item/>
-          <Item/>
-          <Item/>
+          <Col>
+            <Item/>
+          </Col>
+        </Row>
 
         <Col>
           <h2>Hoodies</h2>
         </Col>
-
 
       </Row>
 
