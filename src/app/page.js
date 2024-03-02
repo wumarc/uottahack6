@@ -10,10 +10,13 @@ import Stack from 'react-bootstrap/Stack';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Home() {
-  
+
+  const items = [1, 1, 1, 1, 1, 1]
+  const categoryName = ["Jackets", "Hoodie", "Sweater"]
+
   return (
     <Container className='justify-content-md-center'>
-      
+
       {/* Header */}
       <Row className='justify-content-md-center'>
         <Col xl='12' md='auto' className='justify-content-md-center'>
@@ -22,25 +25,50 @@ export default function Home() {
         </Col>
       </Row>
 
+      {/* Text */}
+      <Row>
+        <Col>
+          <p style={{fontSize: '20px', justifyContent: 'center', alignItems: 'center'}}>
+            Welcome to Patagonia's Sustainability Hub – where style meets conscience. Shop eco-friendly, high-quality gear that's as cool as it is kind to the planet. Make a statement with sustainable fashion.
+          </p>
+        </Col>
+      </Row>
+
       {/* Content */}
       <Row>
-        <h2>Jackets</h2>
-
+        <h2>{categoryName[0]}</h2>
         <Row>
-          <Col md="auto">
-            <Item/>
-          </Col>
-
-          <Col>
-            <Item/>
-          </Col>
+          {items.map((item, index) => (
+            <Col md="auto" className='pb-3'>
+              <Item index={index}/>
+            </Col>
+          ))}
         </Row>
-
-        <Col>
-          <h2>Hoodies</h2>
-        </Col>
-
       </Row>
+
+      <Row>
+        <h2>{categoryName[1]}</h2>
+        <Row>
+          {items.map((item, index) => (
+            <Col md="auto" className='pb-3'>
+              <Item index={index}/>
+            </Col>
+          ))}
+        </Row>
+      </Row>
+
+      <Row>
+        <h2>{categoryName[2]}</h2>
+        <Row>
+          {items.map((item, index) => (
+            <Col md="auto" className='pb-3'>
+              <Item index={index}/>
+            </Col>
+          ))}
+        </Row>
+      </Row>
+
+
 
     </Container>
   );

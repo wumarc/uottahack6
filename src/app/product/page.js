@@ -43,8 +43,6 @@ export default function Product() {
         <Row>
             <ProductInfo product={product} />
         </Row>
-
-
     
         </Container>
     );
