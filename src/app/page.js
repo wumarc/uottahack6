@@ -53,7 +53,9 @@ export default function Home() {
                 .filter(item => item.category === category)
                 .map((item, itemIndex) => (
                   <Col key={itemIndex} md="auto" className='pb-3'>
-                    <Item index={itemIndex} item={item} />
+                    <Item index={itemIndex} item={item} name={item.name}
+              price={item.price}
+              originalPrice={item.originalPrice}/>
                   </Col>
                 ))}
             </Row>
