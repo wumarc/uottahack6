@@ -1,6 +1,7 @@
-#container {
-    text-align: center;
-    padding: 20px;
+#productContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
 }
 
 #img {
@@ -22,4 +23,19 @@
     border: none;
     border-radius: '5px';
     cursor: pointer;
+}
+
+#productImage {
+    flex: 1;
+    margin-right: 20px;
+}
+
+#productDetails {
+    flex: 1;
+    max-width: 500px;
+}
+
+#productInfo {
+    flex-basis: 100%;
+    margin-top: 20px;
 }
