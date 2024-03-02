@@ -13,12 +13,19 @@ export default function Home() {
   
   return (
     <Container className='justify-content-md-center'>
-      
+
       {/* Header */}
       <Row className='justify-content-md-center'>
         <Col xl='12' md='auto' className='justify-content-md-center'>
           {/* Display the image called logo.png */}
           <Image src={logo} alt='logo' height={80} />
+        </Col>
+      </Row>
+
+      {/* Text */}
+      <Row>
+        <Col>
+          <h1>Home</h1>
         </Col>
       </Row>
 

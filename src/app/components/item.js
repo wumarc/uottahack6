@@ -6,7 +6,6 @@ export const Item = () => {
   return (
     <Link
       href="/product"
-      
     >
       <Card 
         border="secondary" 

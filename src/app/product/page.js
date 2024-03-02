@@ -6,8 +6,6 @@ import Container from 'react-bootstrap/Container';
 import ProductInfo from '../components/productInfo';
 import Image from 'next/image';
 import logo from '../../../public/images/logo.png';
-import Image from 'next/image';
-import logo from '../../../public/images/logo.png';
 
 export default function Product() {
     
@@ -44,8 +42,6 @@ export default function Product() {
         <Row>
             <ProductInfo product={product} />
         </Row>
-
-
     
         </Container>
     );
