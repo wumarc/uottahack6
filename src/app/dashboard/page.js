@@ -26,6 +26,7 @@ export default function Dashboard({}) {
             {/* Chart 1 */}
             <LineChart
                 xAxis={[{ data: [1, 2, 3, 5, 8, 10] }]}
+                label="Line Chart"
                 series={[
                     {
                     data: [2, 5.5, 2, 8.5, 1.5, 5],
