@@ -7,11 +7,12 @@ import ProductInfo from '../../components/productInfo';
 import Image from 'next/image';
 import logo from '../../../../public/images/logo.png';
 import items from '../../components/items';
+import styles from '../page.module.css';
 
 export default function Product({params}) {
     const product = items.find(item => item.id === parseInt(params.id));
     return (
-        <Container className='justify-content-md-center'>
+        <Container className={styles.pageDetail}>
 
         {/* Header */}
         <Row className='justify-content-md-center'>
