@@ -28,7 +28,8 @@ export default function Dashboard({}) {
                 <Col xl="auto" className="text-center">
                 <p>Average CO2 Emission Rate Per Customer (in pounds)</p>
                 <LineChart
-                    xAxis={[{ data: ["Jan", "Fev", "Mar", "Apr", "May", "Jun", "Jul", "Aug", 'Sep', 'Oct', 'Nov', 'Dec'] }]}
+                    xAxis={[{scaleType: 'point',  data: ["Jan", "Fev", "Mar", "Apr", "May", "Jun", "Jul", "Aug", 'Sep', 'Oct', 'Nov', 'Dec'] }]}
+                    yAxis={{ scaleType: 'linear'}}
                     series={[
                         {
                         data: [12, 6, 18, 24, 24, 30, 12, 12, 6, 18, 36, 36],
