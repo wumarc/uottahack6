@@ -4,10 +4,8 @@ import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 
-const ProductInfo = ({ product }) => {
 
-    
-
+export default function ProductInfo({ product }) {
     return (
         <div id={styles.productContainer}>
             <div id={styles.productImage}>
@@ -57,4 +55,3 @@ const ProductInfo = ({ product }) => {
         </div>
     );
 };
-export default ProductInfo;
