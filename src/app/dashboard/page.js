@@ -24,43 +24,53 @@ export default function Dashboard({}) {
             </Row>
 
             {/* Chart 1 */}
-            <p>Average CO2 Emission Rate Per Customer (in pounds)</p>
-            <LineChart
-                xAxis={[{ data: [1, 2, 3, 5, 8, 10] }]}
-                series={[
-                    {
-                    data: [2, 5.5, 2, 8.5, 1.5, 5],
-                    },
-                ]}
-                width={500}
-                height={300}
-            />
+            <Row className="justify-content-center">
+                <Col xl="auto" className="text-center">
+                <p>Average CO2 Emission Rate Per Customer (in pounds)</p>
+                <LineChart
+                    xAxis={[{ data: [1, 2, 3, 5, 8, 10] }]}
+                    series={[
+                        {
+                        data: [2, 5.5, 2, 8.5, 1.5, 5],
+                        },
+                    ]}
+                    width={500}
+                    height={300}
+                />
+                </Col>
+            </Row>
 
             {/* Chart 2 */}
-            <p>Average CO2 Emission Rate Per Customer (in pounds)</p>
-            <PieChart
-                series={[{
-                    data: [
-                        {id: 0, value: 10, label: 'Mobility'},
-                        {id: 1, value: 15, label: 'Consumption'},
-                        {id: 2, value: 20, label: 'Living'},
-                    ],
-                    },
-                ]}
-                width={400}
-                height={200}
-            />
-
+            <Row className="justify-content-center">
+                <Col xl="auto" className="text-center">
+                    <p>Average CO2 Emission Rate Per Customer (in pounds)</p>
+                    <PieChart
+                        series={[{
+                            data: [
+                                {id: 0, value: 10, label: 'Mobility'},
+                                {id: 1, value: 15, label: 'Consumption'},
+                                {id: 2, value: 20, label: 'Living'},
+                            ],
+                            },
+                        ]}
+                        width={400}
+                        height={200}
+                    />
+                </Col>
+            </Row>
 
             {/* Chart 3 */}
-            <p>Liters of Water Saved Every Month</p>
-            <BarChart
-                xAxis={[{ scaleType: 'band', data: ['group A', 'group B', 'group C'] }]}
-                series={[{ data: [4, 3, 5] }, { data: [1, 6, 3] }, { data: [2, 5, 6] }]}
-                width={500}
-                height={300}
-            />
-
+            <Row className="justify-content-center">
+                <Col xl="auto" className="text-center">
+                    <p>Liters of Water Saved Every Month</p>
+                    <BarChart
+                        xAxis={[{ scaleType: 'band', data: ['group A', 'group B', 'group C'] }]}
+                        series={[{ data: [4, 3, 5] }, { data: [1, 6, 3] }, { data: [2, 5, 6] }]}
+                        width={500}
+                        height={300}
+                    />
+                </Col>
+            </Row>
 
         </Container>
     );
