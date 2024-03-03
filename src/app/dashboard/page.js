@@ -28,11 +28,12 @@ export default function Dashboard({}) {
                 <Col xl="auto" className="text-center">
                 <p>Average CO2 Emission Rate Per Customer (in pounds)</p>
                 <LineChart
-                    xAxis={[{scaleType: 'point',  data: ["Jan", "Fev", "Mar", "Apr", "May", "Jun", "Jul", "Aug", 'Sep', 'Oct', 'Nov', 'Dec'] }]}
+                    xAxis={[{scaleType: 'point',  data: ["Jan", "Fev", "Mar", "Apr", "May", "Jun", "Jul", "Aug", 'Sep', 'Oct', 'Nov', 'Dec'], label: 'Month'}]}
                     
                     series={[
                         {
                         data: [12, 6, 18, 24, 24, 30, 12, 12, 6, 18, 36, 36],
+                        label: 'CO2 Emission (pounds)',
                         },
                     ]}
                     width={500}
@@ -65,8 +66,9 @@ export default function Dashboard({}) {
                 <Col xl="auto" className="text-center">
                     <p>Liters of Water Saved Every Month</p>
                     <BarChart
-                        xAxis={[{ scaleType: 'band', data: ['group A', 'group B', 'group C'] }]}
-                        series={[{ data: [4, 3, 5] }, { data: [1, 6, 3] }, { data: [2, 5, 6] }]}
+                        xAxis={[{ scaleType: 'band', data: ["Jan", "Fev", "Mar", "Apr", "May", "Jun", "Jul", "Aug", 'Sep', 'Oct', 'Nov', 'Dec'], label: 'Month'}]}
+                        series={[{ data: [36000, 18000, 54000, 72000, 72000, 90000, 36000, 36000, 18000, 54000, 108000, 108000], label: 'Water Saved (in liters)'
+                        }]}
                         width={500}
                         height={300}
                     />
