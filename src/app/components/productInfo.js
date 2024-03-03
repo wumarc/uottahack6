@@ -44,7 +44,15 @@ const ProductInfo = ({ product }) => {
             </div>
             <div id={styles.productDescription}>
                 <h3>Description</h3>
-                <p>{product.description}</p>
+                <p>Whether you’re seeking boulders and alpine views or stalking 
+                    rainbow trout, this low-profile, waterproof jacket will keep 
+                    you dry and provide rain protection from the fork in the trail 
+                    to the places less traveled, and back again. The 3-layer shell 
+                    meets our H2No® Performance Standard for exceptional 
+                    waterproof/breathable protection and the fabrics, 
+                    membrane and durable water repellent (DWR) finish are 
+                    made without perfluorinated chemicals (PFCs/PFAS). 
+                    Made in a Fair Trade Certified™ factory.</p>
             </div>
         </div>
     );
