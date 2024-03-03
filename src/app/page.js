@@ -18,10 +18,10 @@ export default function Home() {
     <Container className={styles.pageDetail}>
 
       {/* Header */}
-      <Row className='justify-content-md-center'>
-        <Col xl='12' md='auto' className='justify-content-md-center'>
+      <Row className="justify-content-center">
+        <Col xl="auto" className="text-center">
           {/* Display the image called logo.png */}
-          <Image src={logo} alt='logo' height={80} />
+          <Image src={logo} alt="logo" height={80} />
         </Col>
       </Row>
 
