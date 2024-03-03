@@ -5,7 +5,7 @@ const ProductInfo = ({ product }) => {
     return (
         <div id={styles.productContainer}>
             <div id={styles.productImage}>
-                <img id={styles.img} src={product.imageUrl} alt={product.name} />
+                <img id={styles.img} src={product.image} alt={product.name} />
             </div>
             <div id={styles.productDetails}>
                 <h1>{product.name}</h1>
@@ -22,8 +22,6 @@ const ProductInfo = ({ product }) => {
                 <p>{product.description}</p>
             </div>
         </div>
-        
-
     );
 };
 export default ProductInfo;

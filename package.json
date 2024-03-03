@@ -20,6 +20,8 @@
     "react-dom": "^18"
   },
   "devDependencies": {
-    "@svgr/webpack": "^8.1.0"
+    "@svgr/webpack": "^8.1.0",
+    "@types/node": "20.11.24",
+    "typescript": "5.3.3"
   }
 }
