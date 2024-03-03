@@ -28,10 +28,10 @@ export default function Dashboard({}) {
                 <Col xl="auto" className="text-center">
                 <p>Average CO2 Emission Rate Per Customer (in pounds)</p>
                 <LineChart
-                    xAxis={[{ data: [1, 2, 3, 5, 8, 10] }]}
+                    xAxis={[{ data: ["Jan", "Fev", "Mar", "Apr", "May", "Jun", "Jul", "Aug", 'Sep', 'Oct', 'Nov', 'Dec'] }]}
                     series={[
                         {
-                        data: [2, 5.5, 2, 8.5, 1.5, 5],
+                        data: [12, 6, 18, 24, 24, 30, 12, 12, 6, 18, 36, 36],
                         },
                     ]}
                     width={500}
