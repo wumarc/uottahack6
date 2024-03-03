@@ -1,9 +1,13 @@
 import React from 'react';
 import styles from './page.module.css';
+import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 
 const ProductInfo = ({ product }) => {
+
+    
+
     return (
         <div id={styles.productContainer}>
             <div id={styles.productImage}>
@@ -16,8 +20,7 @@ const ProductInfo = ({ product }) => {
                     <p>Rating: {product.rating} ({product.reviews} reviews)</p>
                 </div>
                 <p id={styles.price}>${product.price}</p>
-                <button id={styles.addToCart}>Add to Cart</button>
-
+                
                 {/* Metrics */}
                 <h3>Carbon Footprint Breakdown</h3>
 
@@ -30,10 +33,13 @@ const ProductInfo = ({ product }) => {
                 <ProgressBar animated variant='warning' now={80} label={`${80}%`} />
                 <br/>
 
-                <ProgressBar animated variant='success' now={20} label={`${20}%`} />
-                <br/>
+                <p>Carbon Fooprint Generated</p>
 
-                <p>Total Carbon Footprint</p>
+                <p>How much you are saving</p>
+
+
+                <Button variant="success">Add to Cart</Button>
+                {/* Add back if we want to use mik's style id={styles.addToCart} */}
 
             </div>
             <div id={styles.productDescription}>
