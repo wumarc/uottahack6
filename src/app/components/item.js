@@ -5,10 +5,14 @@ import Card from 'react-bootstrap/Card';
 export const Item = ({ id, name, price, originalPrice, image, link }) => {
 
   return (
-    <Link href={`/product/${id}`}>
-      <Card 
+
+    <Link 
+      href={`/product/${id}`}
+      style={{ textDecoration: 'none'}}
+    >
+      <Card
         border="secondary" 
-        style={{ width: '18rem', textDecoration: 'none'}}
+        style={{ width: '18rem'}}
       >
         <Card.Img variant="top" src={image} height={210} width={80}/>
         <Card.Body>
@@ -23,5 +27,6 @@ export const Item = ({ id, name, price, originalPrice, image, link }) => {
         </Card.Body>
       </Card>
     </Link>
+
   );
 }
