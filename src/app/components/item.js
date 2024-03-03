@@ -5,17 +5,17 @@ import Card from 'react-bootstrap/Card';
 export const Item = ({ id, name, price, originalPrice, image, link }) => {
 
   return (
-    <Link
-      href={`/product/${id}`}
-    >
+    <Link href={`/product/${id}`}>
       <Card 
         border="secondary" 
-        style={{ width: '18rem'}}
+        style={{ width: '18rem', textDecoration: 'none'}}
       >
         <Card.Img variant="top" src={image} height={210} width={80}/>
         <Card.Body>
-          <Card.Title>{name}</Card.Title>
-          <Card.Text>
+          <Card.Title
+            style={{ textDecoration: 'none'}}
+          >{name}</Card.Title>
+          <Card.Text style={{textDecoration: 'none'}}>
             {price}
           </Card.Text>
           <p className="card-text" style={{ textDecoration: 'line-through' }}>

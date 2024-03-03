@@ -23,8 +23,13 @@ export default function ProductInfo({ product }) {
                 <p>CO2 Emission Coefficient (in pounds)</p>
                 <ProgressBar animated variant='primary' now={60} label={`${60} pounds CO2`} />
                 
-                {/* <p>Emission Coefficient</p>
-                <p>Energy Consumption</p> */}
+                <p>Emission Coefficient</p>
+                
+                <p>Energy Consumption</p>
+                
+                <p>Litres of water saved to date</p>
+
+                <p>Average CO2 emission rate</p>
 
                 <p>* 1 pound of CO2 is 3,000 liters of water</p>
 
