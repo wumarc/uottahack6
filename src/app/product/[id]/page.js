@@ -10,7 +10,9 @@ import items from '../../components/items';
 import styles from '../page.module.css';
 
 export default function Product({params}) {
+
     const product = items.find(item => item.id === parseInt(params.id));
+    
     return (
         <Container className={styles.pageDetail}>
 

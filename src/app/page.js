@@ -6,7 +6,6 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import logo from '../../public/images/logo.png';
 import { Item } from './components/item';
-import Stack from 'react-bootstrap/Stack';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import items from './components/items';
 import styles from './page.module.css';
