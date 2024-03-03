@@ -19,7 +19,7 @@ const ProductInfo = ({ product }) => {
                 <div id={styles.rating}>
                     <p>Rating: {product.rating} ({product.reviews} reviews)</p>
                 </div>
-                <p id={styles.price}>${product.price}</p>
+                <p id={styles.price}>{product.price}</p>
                 
                 {/* Metrics */}
                 <h3>Carbon Footprint Breakdown</h3>

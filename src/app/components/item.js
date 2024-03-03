@@ -2,11 +2,11 @@
 import Link from 'next/link'
 import Card from 'react-bootstrap/Card';
 
-export const Item = ({ name, price, originalPrice, image, link }) => {
+export const Item = ({ id, name, price, originalPrice, image, link }) => {
 
   return (
     <Link
-      href="/product"
+      href={`/product/${id}`}
     >
       <Card 
         border="secondary" 
