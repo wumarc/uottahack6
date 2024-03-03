@@ -22,21 +22,13 @@ const ProductInfo = ({ product }) => {
                 <p id={styles.price}>{product.price}</p>
                 
                 {/* Metrics */}
-                <h3>Carbon Footprint Breakdown</h3>
-
-                <p>Shipping Footprint</p>
-                <ProgressBar animated variant='primary' now={60} label={`${60}%`} />
+                <p>CO2 Emission Coefficient (in pounds)</p>
+                <ProgressBar animated variant='primary' now={60} label={`${60} pounds CO2`} />
                 
-                <ProgressBar animated variant='info' now={30} label={`${30}%`} />
-                <br/>
+                <p>Emission Coefficient</p>
+                <p>Energy Consumption</p>
 
-                <ProgressBar animated variant='warning' now={80} label={`${80}%`} />
-                <br/>
-
-                <p>Carbon Fooprint Generated</p>
-
-                <p>How much you are saving</p>
-
+                <p>* 1 pound of CO2 is 3,000 liters of water</p>
 
                 <Button variant="success">Add to Cart</Button>
                 {/* Add back if we want to use mik's style id={styles.addToCart} */}
