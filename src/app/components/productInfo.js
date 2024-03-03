@@ -21,9 +21,9 @@ const ProductInfo = ({ product }) => {
                 {/* Metrics */}
                 <h3>Carbon Footprint Breakdown</h3>
 
+                <p>Shipping Footprint</p>
                 <ProgressBar animated variant='primary' now={60} label={`${60}%`} />
-                <br/>
-
+                
                 <ProgressBar animated variant='info' now={30} label={`${30}%`} />
                 <br/>
 
