@@ -18,6 +18,8 @@ export default function ProductInfo({ product }) {
                     <p>Rating: {product.rating} ({product.reviews} reviews)</p>
                 </div>
                 <p id={styles.price}>{product.price}</p>
+                <p style={{ textDecoration: 'line-through' }}>
+          {product.originalPrice} </p>
                 
                 {/* Metrics */}
                 <p>CO2 Emission Coefficient (in pounds)</p>
