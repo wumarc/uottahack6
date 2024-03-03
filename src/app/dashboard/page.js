@@ -24,9 +24,9 @@ export default function Dashboard({}) {
             </Row>
 
             {/* Chart 1 */}
+            <p>Average CO2 Emission Rate Per Customer (in pounds)</p>
             <LineChart
                 xAxis={[{ data: [1, 2, 3, 5, 8, 10] }]}
-                label="Line Chart"
                 series={[
                     {
                     data: [2, 5.5, 2, 8.5, 1.5, 5],
@@ -37,13 +37,13 @@ export default function Dashboard({}) {
             />
 
             {/* Chart 2 */}
+            <p>Average CO2 Emission Rate Per Customer (in pounds)</p>
             <PieChart
-                series={[
-                    {
+                series={[{
                     data: [
-                        { id: 0, value: 10, label: 'series A' },
-                        { id: 1, value: 15, label: 'series B' },
-                        { id: 2, value: 20, label: 'series C' },
+                        {id: 0, value: 10, label: 'Mobility'},
+                        {id: 1, value: 15, label: 'Consumption'},
+                        {id: 2, value: 20, label: 'Living'},
                     ],
                     },
                 ]}
@@ -53,6 +53,7 @@ export default function Dashboard({}) {
 
 
             {/* Chart 3 */}
+            <p>Liters of Water Saved Every Month</p>
             <BarChart
                 xAxis={[{ scaleType: 'band', data: ['group A', 'group B', 'group C'] }]}
                 series={[{ data: [4, 3, 5] }, { data: [1, 6, 3] }, { data: [2, 5, 6] }]}
