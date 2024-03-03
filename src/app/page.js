@@ -9,12 +9,13 @@ import { Item } from './components/item';
 import Stack from 'react-bootstrap/Stack';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import items from './components/items';
+import styles from './page.module.css';
 
 export default function Home() {
   const categoryName = ["Jackets", "Hoodie", "Sweater"]
 
   return (
-    <Container className='justify-content-md-center'>
+    <Container className={styles.pageDetail}>
 
       {/* Header */}
       <Row className='justify-content-md-center'>
